@@ -1,0 +1,59 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Light/Dark background difference */
+body.light {
+  background: linear-gradient(135deg, #f6f8fc, #e0e7ff);
+  color: #222;
+}
+
+body.dark {
+  background: #000; /* black background in dark mode */
+  color: #f1f1f1;
+}
+
+/* Make navbar black in dark mode */
+body.dark nav.navbar {
+  background: #000 !important;
+}
+
+/* Keep your content cards readable in dark mode (white cards + dark text) */
+body.dark .bg-white,
+body.dark .card,
+body.dark .bg-body-tertiary {
+  background: #ffffff !important;
+  color: #111 !important;
+}
+
+/* Home subtitle */
+.home-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444;
+  margin-top: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+.site-footer .footer-text {
+  margin-right: 1rem;
+  cursor: default;
+  color: #555;
+}
